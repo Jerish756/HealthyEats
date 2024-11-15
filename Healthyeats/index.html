@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyEats</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+header {
+    background-color: #1c130e;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+header h1 {
+    font-size: 30px;
+    color: #00bcd4;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4;
+}
+#home {
+    background: rgba(0,0,0,0.7) url(Still\ Life\ -\ Food.jpg) center center fixed ;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 0;
+    height: 100vh;
+}
+#home h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+#home p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.submit{
+    background-color: #00bcd4;
+    color: #121212;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.submit:hover {
+    background-color: #03a9f4;
+}
+#about {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: rgba(0,0,0,0.7) url(Still\ Life\ -\ Food.jpg) center center fixed ;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+}
+#about .container{
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #1c130e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#about h2 {
+    font-size: 30px;
+    color: #00bcd4;
+}
+#about p {
+    font-size: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#food {
+    padding: 50px 0;
+    text-align: center;
+    background: rgba(0,0,0,0.7) url(Still\ Life\ -\ Food.jpg) center center fixed ;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+}
+
+#food h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #00bcd4;
+}
+
+.food-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.food-item {
+    background-color: #1c130e;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+}
+
+.food-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.food-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#contact{
+    background: rgba(0,0,0,0.7) url(Still\ Life\ -\ Food.jpg) center center fixed ;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+    margin: 0;
+    padding: 50px 0;
+}
+.contact {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    padding-top: 50px;
+    background-color: #1c130e;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 220, 0.184);
+    color: #e0e0e0;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #3d85c6;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #2b67a4;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+    color: #cccccc;
+}
+
+.contact-info a {
+    color: #3d85c6;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1c130e;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HealthyEats</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#food">Food</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container">
+            <h2>Your Path to a Healthier Life</h2>
+            <p>Discover our collection of fresh, nutritious foods and easy recipes.</p>
+            <a href="#food" class="submit">Explore Now</a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>Our Story</h2>
+            <p>Welcome to our world of healthy and nutritious foods. Our mission is to provide high-quality, organic, and sustainably sourced products that enrich your life. We believe that healthy eating should be both delicious and accessible for everyone.</p>
+        </div>
+    </section>
+    <section id="food">
+        <div class="container">
+            <h2>Explore Our Foods</h2>
+            <div class="food-grid">
+                <div class="food-item">
+                    <img src="AvocadoToastEgg.jpg" alt="AvocadoToastEgg" height="200" width="200">
+                    <h3>Avocado Toast with Poached Eggs <br>Price: Rs 120 </h3>
+                </div>
+                <div class="food-item">
+                    <img src="Grilled Chicken Caesar Salad.jpg" alt="Grilled Chicken Caesar Salad" height="200" width="200">
+                    <h3>Grilled Chicken Caesar Salad <br> Price: Rs 180</h3>
+                </div>
+                <div class="food-item">
+                    <img src="Grilled Salmon with Asparagus.jpg" alt="Grilled Salmon with Asparagus" height="200" width="200">
+                    <h3>Grilled Salmon with Asparagus <br> Price: Rs 200</h3>
+                </div>
+                <div class="food-item">
+                    <img src="FruitSalad.jpg" alt="FruitSalad" height="200" width="200">
+                    <h3>FruitSalad <br> Price: Rs 60</h3>
+                </div>
+                <div class="food-item">
+                    <img src="Lemon-Mint Infused Water.jpg" alt="Lemon-Mint Water" height="200" width="200">
+                    <h3>Lemon-Mint Water <br> Price: Rs 40</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact">
+            <h2>Contact Us</h2>
+        <p>Have any questions? We'd love to hear from you!</p>
+        
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 HealthyEats. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
